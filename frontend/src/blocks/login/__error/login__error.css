@@ -1,0 +1,14 @@
+.login__error {
+  max-width: 358px;
+  margin-top: 0;
+  padding: 0;
+  min-height: 20px;
+}
+
+@media screen and (max-width: 530px) {
+  .login__error {
+    margin-left: 22px;
+    margin-right: 22px;
+    max-width: 238px;
+  }
+}

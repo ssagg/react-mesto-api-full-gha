@@ -1,0 +1,16 @@
+.popup__error {
+  margin-left: 36px;
+  margin-right: 36px;
+  max-width: 358px;
+  margin-top: 5px;
+  padding: 0;
+  min-height: 31px;
+}
+
+@media screen and (max-width: 530px) {
+  .popup__error {
+    margin-left: 22px;
+    margin-right: 22px;
+    max-width: 238px;
+  }
+}

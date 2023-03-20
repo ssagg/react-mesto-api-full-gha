@@ -1,0 +1,13 @@
+.card__icon {
+  background-image: url("../../../images/like.svg");
+  width: 22px;
+  height: 19px;
+  border: 0;
+  background-color: transparent;
+  background-repeat: no-repeat;
+}
+
+.card__icon:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}

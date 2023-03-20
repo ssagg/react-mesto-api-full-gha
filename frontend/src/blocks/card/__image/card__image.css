@@ -1,0 +1,13 @@
+.card__image {
+  max-width: 282px;
+  aspect-ratio: 1;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: black;
+  object-fit: cover;
+}
+
+.card__image:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}

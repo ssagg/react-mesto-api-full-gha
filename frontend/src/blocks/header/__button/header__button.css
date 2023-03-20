@@ -1,0 +1,25 @@
+.header__button {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  background: transparent;
+  color: #a9a9a9;
+  border: 0;
+  margin-bottom: 41px;
+  padding-left: 24px;
+  display: flex;
+}
+
+.header__button:hover {
+  color: white;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 525px) {
+  .header__button {
+    margin: 0 auto 40px;
+    padding-left: 0;
+    font-size: 14px;
+    line-height: 17px;
+  }
+}

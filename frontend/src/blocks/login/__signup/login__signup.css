@@ -1,0 +1,12 @@
+.login__signup {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  text-decoration: none;
+}
