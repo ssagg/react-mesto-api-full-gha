@@ -3,7 +3,6 @@ const { celebrate, Joi, errors } = require('celebrate');
 const usersRouter = require('./users');
 const cardRouter = require('./cards');
 const { errorsLogger } = require('../middlewares/logger');
-
 const auth = require('../middlewares/auth');
 const link = require('../utils/regexPattern');
 const {
