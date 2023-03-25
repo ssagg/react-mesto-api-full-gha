@@ -11,11 +11,11 @@ const {
 } = require('../controllers/users');
 const NotFoundError = require('../errors/NotFound');
 
-// router.get('/crash-test', () => {
-//   setTimeout(() => {
-//     throw new Error('Сервер сейчас упадёт');
-//   }, 0);
-// });
+router.get('/crash-test', () => {
+  setTimeout(() => {
+    throw new Error('Сервер сейчас упадёт');
+  }, 0);
+});
 
 router.post('/signin', celebrate({
   body: Joi.object().keys({
