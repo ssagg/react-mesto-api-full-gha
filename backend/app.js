@@ -20,7 +20,7 @@ const limiter = rateLimit({
 
 app.use(limiter);
 app.use(helmet());
-app.use(cors({ origin: 'http://localhost:3001' }));
+app.use(cors({ origin: ['https://mesto.ssagg.nomoredomains.work/sign-in', 'http://mesto.ssagg.nomoredomains.work/sign-in'] }));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
