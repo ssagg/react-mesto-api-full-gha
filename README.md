@@ -9,7 +9,7 @@ https://mesto.ssagg.nomoredomains.work/
 
 ## Ссылки на проект
 
-IP-адрес 158.160.39.6
+IP 158.160.39.6
 
 Frontend https://mesto.ssagg.nomoredomains.work/
 
