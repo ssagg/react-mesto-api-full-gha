@@ -7,7 +7,6 @@ const bodyParser = require('body-parser');
 const error = require('./middlewares/error');
 const router = require('./routes/index');
 const { requestsLogger } = require('./middlewares/logger');
-
 const { PORT, DB } = require('./config');
 
 const app = express();
