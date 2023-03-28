@@ -4,6 +4,8 @@ const cors = require('cors');
 const helmet = require('helmet');
 const rateLimit = require('express-rate-limit');
 const bodyParser = require('body-parser');
+const { errors } = require('celebrate');
+const { errorsLogger } = require('./middlewares/logger');
 const error = require('./middlewares/error');
 const router = require('./routes/index');
 const { requestsLogger } = require('./middlewares/logger');
@@ -19,7 +21,7 @@ const limiter = rateLimit({
 
 app.use(limiter);
 app.use(helmet());
-app.use(cors({ origin: ['https://mesto.ssagg.nomoredomains.work/sign-in', 'http://mesto.ssagg.nomoredomains.work/sign-in'] }));
+app.use(cors({ origin: ['https://mesto.ssagg.nomoredomains.work', 'http://mesto.ssagg.nomoredomains.work'] }));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
@@ -30,6 +32,8 @@ mongoose.connect(DB, {
 
 app.use(requestsLogger);
 app.use('/', router);
+app.use(errorsLogger);
+app.use(errors());
 app.use(error);
 
 app.listen(PORT, () => {
